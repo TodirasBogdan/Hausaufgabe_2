@@ -1,7 +1,13 @@
 package Hausaufgabe_2;
 
-public class Hochsprung extends Leichtathletik{
+/**
+ * Hochsprung ist eine Unterklasse von Leichtathletik
+ */
+public class Hochsprung extends Leichtathletik {
 
+    /**
+     * @return 20
+     */
     @Override
     public double kalkuliereZeit() {
         return 20;
