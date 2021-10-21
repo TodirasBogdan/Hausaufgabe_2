@@ -10,7 +10,7 @@ public class Main {
         Sport Fussball = new Fussball();
         Sport Hindernislauf = new Hindernislauf();
         Sport Hochsprung = new Hochsprung();
-        List<Sport> sports1 = new ArrayList<Sport>();
+        List<Sport> sports1 = new ArrayList<>();
         sports1.add(Basketball);
         sports1.add(Fussball);
         sports1.add(Hindernislauf);
@@ -19,7 +19,7 @@ public class Main {
 
         System.out.println(B1.kalkuliereZeit());
         System.out.println(B1.kalkuliereZeit(Hochsprung));
-        System.out.println(B1.kalkuliereDurchschinttszeit());
+        System.out.println(B1.kalkuliereDurchschnittszeit());
 
     }
 }

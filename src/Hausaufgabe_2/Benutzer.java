@@ -51,7 +51,7 @@ public class Benutzer {
         return sport.kalkuliereZeit();
     }
 
-    public double kalkuliereDurchschinttszeit(){
+    public double kalkuliereDurchschnittszeit(){
         double total=0,anzahl=0;
         for(Sport s:sport){
             total+=s.kalkuliereZeit();
