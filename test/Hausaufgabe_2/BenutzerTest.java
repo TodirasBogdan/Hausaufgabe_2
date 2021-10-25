@@ -22,9 +22,9 @@ class BenutzerTest {
         sports1.add(fussball);
         sports1.add(hindernislauf);
 
-        Benutzer b1 = new Benutzer("Paul", "Holz", sports1);
+        Benutzer benutzer1 = new Benutzer("Paul", "Holz", sports1);
 
-        assert (b1.kalkuliereZeit() == 150);
+        assert (benutzer1.kalkuliereZeit() == 150);
     }
 
     /**
@@ -41,9 +41,9 @@ class BenutzerTest {
         sports2.add(fussball);
         sports2.add(hindernislauf);
 
-        Benutzer B2 = new Benutzer("Paul", "Holz", sports2);
+        Benutzer benutzer2 = new Benutzer("Paul", "Holz", sports2);
 
-        assert (B2.kalkuliereZeit(hochsprung) == 20);
+        assert (benutzer2.kalkuliereZeit(hochsprung) == 20);
     }
 
     /**
@@ -59,8 +59,8 @@ class BenutzerTest {
         sports3.add(fussball);
         sports3.add(hindernislauf);
 
-        Benutzer B3 = new Benutzer("Paul", "Holz", sports3);
+        Benutzer benutzer3 = new Benutzer("Paul", "Holz", sports3);
 
-        assert (B3.kalkuliereDurchschnittszeit() == 50);
+        assert (benutzer3.kalkuliereDurchschnittszeit() == 50);
     }
 }
