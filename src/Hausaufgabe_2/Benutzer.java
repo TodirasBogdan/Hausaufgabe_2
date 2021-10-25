@@ -49,11 +49,11 @@ public class Benutzer {
      * @return die totale Zeit für die Treibung aller Sportarten in der Sportliste der Benutzer
      */
     public double kalkuliereZeit() {
-        double total = 0;
+        double totalZeit = 0;
         for (Sport s : sport) {
-            total += s.kalkuliereZeit();
+            totalZeit += s.kalkuliereZeit();
         }
-        return total;
+        return totalZeit;
     }
 
     /**
@@ -70,12 +70,12 @@ public class Benutzer {
      * @return die Durchschnittszeit für die Treibung aller Sportarten in der Sportliste der Benutzer
      */
     public double kalkuliereDurchschnittszeit() {
-        double total = 0, anzahl = 0;
+        double totalZeit = 0, sportartenAnzahl = 0;
         for (Sport s : sport) {
-            total += s.kalkuliereZeit();
-            anzahl++;
+            totalZeit += s.kalkuliereZeit();
+            sportartenAnzahl++;
         }
-        return total / anzahl;
+        return totalZeit / sportartenAnzahl;
     }
 
 }
